@@ -39,4 +39,19 @@
       <initValue>9999999</initValue>
       <name>invalidUserIdInt</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>userEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>8888888</initValue>
+      <name>invalidUpdateJob</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>898989</initValue>
+      <name>invalidUpdateName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

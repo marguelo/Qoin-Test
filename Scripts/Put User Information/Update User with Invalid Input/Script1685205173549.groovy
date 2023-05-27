@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Get Single User Collection/GET single user - String'))
+response = WS.sendRequest(findTestObject('Put Update User Collection/PUT Update User Invalid Input'))
 
-WS.verifyResponseStatusCode(response, 404)
+WS.verifyResponseStatusCode(response, 409)
+

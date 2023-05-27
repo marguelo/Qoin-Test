@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET single user - Int</name>
+   <name>PUT Update User Invalid Info</name>
    <tag></tag>
-   <elementGuidId>b763ea6e-e8c6-42d7-b668-7ebd4c91f8a6</elementGuidId>
+   <elementGuidId>340905d2-7adb-4414-8356-932b4146acf8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${GlobalVariable.invalidUpdateName}\&quot;,\n    \&quot;job\&quot;: \&quot;${GlobalVariable.invalidUpdateJob}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ce7ce177-ff9c-4a03-91c2-a7edd777daf2</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>*/*</value>
+      <webElementGuid>fe5f06f7-3cb4-4e04-80cc-eddfde6db831</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>PUT</restRequestMethod>
    <restUrl>${GlobalVariable.url}api/users/${GlobalVariable.userId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -34,14 +54,8 @@ import com.kms.katalon.core.webservice.verification.WSResponseManager
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-import base.util.VariableCollections as VariableCollections
-
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-email = response.getBodyContent(&quot;email&quot;)
-VariableCollections.map.put(&quot;userEmail&quot;,email)
-println(email)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

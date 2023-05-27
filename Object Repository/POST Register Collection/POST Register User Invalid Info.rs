@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>PUT Update User</name>
+   <name>POST Register User Invalid Info</name>
    <tag></tag>
-   <elementGuidId>832c971e-150e-4bb0-9592-b8ce78bbe494</elementGuidId>
+   <elementGuidId>8fd29aab-04d0-495c-8407-6acd37d06b5c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${GlobalVariable.updateName}\&quot;,\n    \&quot;job\&quot;: \&quot;${GlobalVariable.updateJob}\&quot;,\n  \t\&quot;email\&quot;: \&quot;c@c.com\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${GlobalVariable.updateName}\&quot;,\n    \&quot;job\&quot;: \&quot;${GlobalVariable.updateJob}\&quot;,\n  \t\&quot;linkedinUrl\&quot;: 89\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,7 +21,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>ce7ce177-ff9c-4a03-91c2-a7edd777daf2</webElementGuid>
+      <webElementGuid>36ca804d-98c1-4666-8bfb-c65e570a0be8</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -29,13 +29,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>fe5f06f7-3cb4-4e04-80cc-eddfde6db831</webElementGuid>
+      <webElementGuid>a9008021-6098-4bc0-bcea-653ad3f890d2</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.6.0</katalonVersion>
+   <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.url}api/users/${GlobalVariable.userId}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://reqres.in/api/users</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
