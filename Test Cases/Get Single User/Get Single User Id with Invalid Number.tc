@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get Single User Id with Invalid Number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbc60911-56c3-4381-aa87-baee7cfd18b2</testCaseGuid>
+</TestCaseEntity>
